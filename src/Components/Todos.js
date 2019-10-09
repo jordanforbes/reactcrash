@@ -3,14 +3,19 @@ import TodoItem from './Todoitem';
 import PropTypes from 'prop-types';
 
 class Todos extends Component {
-	markComplete = () =>{
-		
-	}
+	// markComplete = () =>{
+	// 	console.log('Hello')
+	// }
+
+// markComplete = ()=>{
+// 	console.log('From app.js')
+// }
 
   render(){
     return this.props.todos.map((todo) =>(
         	<TodoItem key= {todo.id} todo = {todo}
-        	markComplete={this.markComplete}/>
+        	markComplete= {this.props.markComplete}
+        	delTodo={this.props.delTodo}/>
        ));
   }
 }
