@@ -26,7 +26,7 @@ export class TodoItem extends Component {
 					{ title }
 					<button
 					 onClick={this.props.delTodo.bind(this, id)}
-					 style = {btnStyle}></button>
+					 style = {btnStyle}>x</button>
 				</p>
 			</div>
 		)
